@@ -39,14 +39,14 @@ AIHawk has been featured by major media outlets for revolutionizing how job seek
    cd Jobs_Applier_AI_Agent_AIHawk
    ```
 2. (Optional but recommended) create and activate a virtual environment:
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate   # On Windows use: .venv\Scripts\activate
-   ```
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate   # On Windows use: .venv\Scripts\activate
+    ```
 3. Install Python dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+    ```bash
+    python3 -m pip install -r requirements.txt
+    ```
 
 ### Configuration
 1. Copy the example data folder and update it with your information:
@@ -61,9 +61,9 @@ AIHawk has been featured by major media outlets for revolutionizing how job seek
 
 ### Running the agent
 1. Start the application:
-   ```bash
-   python main.py
-   ```
+    ```bash
+    python3 main.py
+    ```
 2. Follow the interactive prompts to build resumes and apply for jobs.
    Generated output is saved in `data_folder/output`.
 

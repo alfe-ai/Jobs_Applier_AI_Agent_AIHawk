@@ -24,3 +24,46 @@ AIHawk has been featured by major media outlets for revolutionizing how job seek
 [**Vanity Fair**](https://www.vanityfair.it/article/intelligenza-artificiale-candidature-di-lavoro)
 [**404 Media**](https://www.404media.co/i-applied-to-2-843-roles-the-rise-of-ai-powered-job-application-bots/)
 
+</div>
+
+## Setup
+
+### Prerequisites
+- Python 3.10 or newer
+- [Google Chrome](https://www.google.com/chrome/) installed (used by Selenium)
+
+### Installation
+1. Clone the repository and move into it:
+   ```bash
+   git clone https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk.git
+   cd Jobs_Applier_AI_Agent_AIHawk
+   ```
+2. (Optional but recommended) create and activate a virtual environment:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate   # On Windows use: .venv\Scripts\activate
+   ```
+3. Install Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Configuration
+1. Copy the example data folder and update it with your information:
+   ```bash
+   cp -r data_folder_example data_folder
+   ```
+2. Edit the files inside `data_folder`:
+   - `secrets.yaml` – add your LLM API key under `llm_api_key`.
+   - `plain_text_resume.yaml` – fill in your resume details.
+   - `work_preferences.yaml` – set your job search preferences.
+   - Optionally adjust logging and model defaults in `config.py`.
+
+### Running the agent
+1. Start the application:
+   ```bash
+   python main.py
+   ```
+2. Follow the interactive prompts to build resumes and apply for jobs.
+   Generated output is saved in `data_folder/output`.
+
